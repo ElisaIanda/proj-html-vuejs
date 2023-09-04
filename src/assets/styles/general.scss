@@ -1,2 +1,117 @@
 @import 'bootstrap';
-@import "./partials/variable"
+@import "./partials/variable";
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Source+Sans+3&display=swap');
+
+* {
+    font-family: 'Fredoka',
+        sans-serif;
+}
+
+h1 {
+    font-size: 58px;
+    line-height: 56px;
+    font-weight: 900;
+    color: #3d404f;
+
+}
+
+.my-btn {
+    padding: 23px 45px;
+    border-radius: 35px;
+    font-size: 15px;
+    letter-spacing: .5px;
+    font-weight: 600;
+    border: none;
+    transition: 0.5s;
+}
+
+.btn-yellow {
+    background-color: #e9d758;
+    color: #ffffff;
+}
+
+.btn-white {
+    color: #e56768;
+    background-color: white;
+}
+
+.btn-pink {
+    background-color: #e56768;
+    color: white;
+}
+
+.p-64-100 {
+    padding-top: 64px;
+    padding-bottom: 100px;
+}
+
+.h1-p {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+p {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #3d404f;
+}
+
+.h1-font {
+    font-size: 51px;
+}
+
+.font-48 {
+    font-size: 48px;
+}
+
+h2 {
+    line-height: 30px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.color-light-grey {
+    color: #8b8b8a;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.date-card-color {
+    color: #E56768;
+    ;
+}
+
+.card-p {
+    padding: 35px 30px 30px 30px;
+}
+
+.bg-pink {
+    background-color: #e56768;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.h2-special {
+    font-size: 35px;
+    line-height: 45px;
+    text-align: left;
+}
+
+.title-slider {
+    color: #434959;
+    font-size: 22px;
+    line-height: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.p-slider{
+    font-size: 15px;
+    line-height: 16px;
+    text-align: center;
+    color: #999999;
+}
+

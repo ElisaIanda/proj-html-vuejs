@@ -1,271 +1,123 @@
 <script>
+import MainTabs from "./MainTabs.vue"
+
 export default {
+    components: {
+        MainTabs,
+    }
 }
 </script>
 
 <template>
-    <main>
+    <main class="overflow-hidden">
         <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <img src="../assets/img/books-icon.png" alt="" style="max-width: 60px;">
-                    <h1>Thousands of courses
-                        for any type of student
-                    </h1>
-                    <div class="description">At EduPrime, it doesn’t matter what domain you wish to pursue a career in. Here
-                        you can find a
-                        course
-                        that satisfies your needs within a click away and applies for a course in a matter of minutes.
-                        EduPrime
-                        is ranked as the most versatile university in the world, thanks to the number of courses it
-                        provides.
-                    </div>
-                    <button class="btn-yellow">
-                        Browse through courses
-                    </button>
-                </div>
-                <div class="col-6">
-                    <img src="../assets/img/graduation-illustration.png" class="w-100" alt="">
-                </div>
-            </div>
 
+            <!-- First Section -->
+            <section class="">
+                <div class="row p-64-100">
+                    <div class="col-6">
+                        <img src="../assets/img/books-icon.png" alt="" style="max-width: 60px;">
+                        <h1 class="h1-p h1-font">Thousands of courses
+                            for any type of student
+                        </h1>
+                        <p class="">At EduPrime, it doesn’t matter what domain you wish to pursue a career in.
+                            Here
+                            you can find a
+                            course
+                            that satisfies your needs within a click away and applies for a course in a matter of minutes.
+                            EduPrime
+                            is ranked as the most versatile university in the world, thanks to the number of courses it
+                            provides.
+                        </p>
+                        <button class="my-btn btn-yellow hover-red">
+                            Browse through courses
+                        </button>
+                    </div>
+                    <div class="col-6">
+                        <img src="../assets/img/graduation-illustration.png" class="w-100" alt="">
+                    </div>
+                </div>
+            </section>
 
-            <div class="row">
-                <div class="col text-center">
-                    <h1>Faculties available at EduPrime</h1>
-                    <div style="margin-top: 30px; margin-bottom: 45px;">
-                        A single university with a load of courses, tailored
-                        to satisfy any student’s needs.</div>
-                </div>
-            </div>
+            <MainTabs></MainTabs>
 
-
-            <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active text-center" id="nav-tab1-tab" data-bs-toggle="tab" href="#nav-tab1"
-                        role="tab" aria-controls="nav-tab1" aria-selected="true">
-                        <img class="w-100 tab-img" src="../assets/img/Gavel-v2.png" alt="">
-                        Law Faculty
-                    </a>
-                    <a class="nav-item nav-link text-center" id="nav-tab2-tab" data-bs-toggle="tab" href="#nav-tab2"
-                        role="tab" aria-controls="nav-tab2" aria-selected="false">
-                        <img class="w-100 tab-img" src="../assets/img/Gavel-v2.png" alt="">
-                        Economy
-                    </a>
-                    <a class="nav-item nav-link text-center" id="nav-tab3-tab" data-bs-toggle="tab" href="#nav-tab3"
-                        role="tab" aria-controls="nav-tab3" aria-selected="false">
-                        <img class="w-100 tab-img" src="../assets/img/Gavel-v2.png" alt="">
-                        Medicine</a>
-                    <a class="nav-item nav-link text-center" id="nav-tab4-tab" data-bs-toggle="tab" href="#nav-tab4"
-                        role="tab" aria-controls="nav-tab4" aria-selected="true">
-                        <img class="w-100 tab-img" src="../assets/img/Gavel-v2.png" alt="">
-                        Law Faculty
-                    </a>
-                    <a class="nav-item nav-link text-center" id="nav-tab5-tab" data-bs-toggle="tab" href="#nav-tab5"
-                        role="tab" aria-controls="nav-tab5" aria-selected="false">
-                        <img class="w-100 tab-img" src="../assets/img/Gavel-v2.png" alt="">
-                        Economy
-                    </a>
-                    <a class="nav-item nav-link text-center" id="nav-tab6-tab" data-bs-toggle="tab" href="#nav-tab6"
-                        role="tab" aria-controls="nav-tab6" aria-selected="false">
-                        <img class="w-100 tab-img" src="../assets/img/Gavel-v2.png" alt="">
-                        Medicine</a>
-                </div>
-            </nav>
-
-            <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-tab1" role="tabpanel" aria-labelledby="nav-tab1-tab">
-                    <div class="container mb-5">
-                        <div class="d-flex padding-16 align-items-center">
-                            <div class="col-6 text-center">
-                                <img src="../assets/img/gavel-illustration.png" alt="">
-                            </div>
-                            <div class="col-6">
-                                <h2>Law Faculty</h2>
-                                <div>
-                                    Learning from world-leading academics and practitioners, you’ll not only receive an
-                                    outstanding grounding in the theory of law, but you will be able to understand how those
-                                    principles are applied in practice through a range of student-led activities and
-                                    competitions.
-                                </div>
-                                <button class="btn-tabs">Read More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="nav-tab2" role="tabpanel" aria-labelledby="nav-tab2-tab">
-                    <div class="container mb-5">
-                        <div class="d-flex padding-16 align-items-center">
-                            <div class="col-6 text-center">
-                                <img src="../assets/img/gavel-illustration.png" alt="">
-                            </div>
-                            <div class="col-6">
-                                <h2>Law Faculty</h2>
-                                <div>
-                                    Learning from world-leading academics and practitioners, you’ll not only receive an
-                                    outstanding grounding in the theory of law, but you will be able to understand how those
-                                    principles are applied in practice through a range of student-led activities and
-                                    competitions.
-                                </div>
-                                <button class="btn-tabs">Read More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="nav-tab3" role="tabpanel" aria-labelledby="nav-tab3-tab">
-                    <div class="container mb-5">
-                        <div class="d-flex padding-16 align-items-center">
-                            <div class="col-6 text-center">
-                                <img src="../assets/img/gavel-illustration.png" alt="">
-                            </div>
-                            <div class="col-6">
-                                <h2>Law Faculty</h2>
-                                <div>
-                                    Learning from world-leading academics and practitioners, you’ll not only receive an
-                                    outstanding grounding in the theory of law, but you will be able to understand how those
-                                    principles are applied in practice through a range of student-led activities and
-                                    competitions.
-                                </div>
-                                <button class="btn-tabs">Read More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="nav-tab4" role="tabpanel" aria-labelledby="nav-tab1-tab">
-                    <div class="container mb-5">
-                        <div class="d-flex padding-16 align-items-center">
-                            <div class="col-6 text-center">
-                                <img src="../assets/img/gavel-illustration.png" alt="">
-                            </div>
-                            <div class="col-6">
-                                <h2>Law Faculty</h2>
-                                <div>
-                                    Learning from world-leading academics and practitioners, you’ll not only receive an
-                                    outstanding grounding in the theory of law, but you will be able to understand how those
-                                    principles are applied in practice through a range of student-led activities and
-                                    competitions.
-                                </div>
-                                <button class="btn-tabs">Read More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="nav-tab5" role="tabpanel" aria-labelledby="nav-tab2-tab">
-                    <div class="container mb-5">
-                        <div class="d-flex padding-16 align-items-center">
-                            <div class="col-6 text-center">
-                                <img src="../assets/img/gavel-illustration.png" alt="">
-                            </div>
-                            <div class="col-6">
-                                <h2>Law Faculty</h2>
-                                <div>
-                                    Learning from world-leading academics and practitioners, you’ll not only receive an
-                                    outstanding grounding in the theory of law, but you will be able to understand how those
-                                    principles are applied in practice through a range of student-led activities and
-                                    competitions.
-                                </div>
-                                <button class="btn-tabs">Read More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="nav-tab6" role="tabpanel" aria-labelledby="nav-tab3-tab">
-                    <div class="container mb-5">
-                        <div class="d-flex padding-16 align-items-center">
-                            <div class="col-6 text-center">
-                                <img src="../assets/img/gavel-illustration.png" alt="">
-                            </div>
-                            <div class="col-6">
-                                <h2>Law Faculty</h2>
-                                <div>
-                                    Learning from world-leading academics and practitioners, you’ll not only receive an
-                                    outstanding grounding in the theory of law, but you will be able to understand how those
-                                    principles are applied in practice through a range of student-led activities and
-                                    competitions.
-                                </div>
-                                <button class="btn-tabs">Read More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-
         <div class="w-100 overflow-hidden">
             <img src="../assets/img/svg-0.svg" alt="">
         </div>
-    </main>
 
-    <main class="secondmain overflow-hidden">
+        <section class=" section-bg " style="background-color: #e56768;">
+            <div class="container">
 
-        <div class="container section-bg">
-            <div class="text-center">
-                <img src="../assets/img/Clock-and-Bell.png" style="max-width: 66px;" alt="">
-                <h1 style="margin: 20px 0 10px 0;">University Year</h1>
-            </div>
-
-            <div class="row">
-                <div class="item-top">
-                    <div class="col-4 text-center">
-                        <h6>Demo Classes</h6>
-                        <div>In the first week, students try to accommodate with the teaching style and choose their
-                            optional
-                            courses.
-                        </div>
-                    </div>
-                    <div class="col-4 text-center">
-                        <h6>Demo Classes</h6>
-                        <div>In the first week, students try to accommodate with the teaching style and choose their
-                            optional
-                            courses.
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="../assets/img/Timeline-Item.png" alt="">
-                </div>
-                <div class="item-bottom">
-                    <div class="col-4 text-center">
-                        <h6>Demo Classes</h6>
-                        <div>In the first week, students try to accommodate with the teaching style and choose their
-                            optional
-                            courses.
-                        </div>
-                    </div>
-                    <div class="col-4 text-center">
-                        <h6>Demo Classes</h6>
-                        <div>In the first week, students try to accommodate with the teaching style and choose their
-                            optional
-                            courses.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section">
                 <div class="text-center">
                     <img src="../assets/img/Clock-and-Bell.png" style="max-width: 66px;" alt="">
-                    <h1 style="margin: 20px 0 10px 0;">Upcoming Events</h1>
+                    <h1 class="h1-p text-white">University Year</h1>
                 </div>
+
                 <div class="row">
+                    <div class="item-top">
+                        <div class="col-4 text-center">
+                            <h6 class="title-sc">Demo Classes</h6>
+                            <div class="text-white">In the first week, students try to accommodate with the teaching style
+                                and
+                                choose their
+                                optional
+                                courses.
+                            </div>
+                        </div>
+                        <div class="col-4 text-center">
+                            <h6 class="title-sc">Demo Classes</h6>
+                            <div class="text-white">In the first week, students try to accommodate with the teaching style
+                                and
+                                choose their
+                                optional
+                                courses.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="../assets/img/Timeline-Item.png" alt="">
+                    </div>
+                    <div class="item-bottom">
+                        <div class="col-4 text-center">
+                            <h6 class="title-sc">Demo Classes</h6>
+                            <div class="text-white">In the first week, students try to accommodate with the teaching style
+                                and
+                                choose their
+                                optional
+                                courses.
+                            </div>
+                        </div>
+                        <div class="col-4 text-center">
+                            <h6 class="title-sc">Demo Classes</h6>
+                            <div class="text-white">In the first week, students try to accommodate with the teaching style
+                                and
+                                choose their
+                                optional
+                                courses.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <img src="../assets/img/Clock-and-Bell.png" style="max-width: 66px;" alt="">
+                    <h1 class="h1-p text-white">Upcoming Events</h1>
+                </div>
+                <div class="row" style="padding-top: 50px;">
                     <div class="col-4">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card text-center">
                             <div class="card-body">
                                 <h4 class="card-title">Coaching Sessions</h4>
-                                <h6 class="d-flex align-items-center card-subtitle mb-2 text-body-secondary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="me-1 bi bi-calendar2-week" viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z" />
-                                        <path
-                                            d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4zM11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
-                                    </svg>
+                                <h6 class="d-flex justify-content-center" style="color: #93949d;">
+                                    <i class="fa-regular fa-calendar-days me-1"></i>
                                     <div>
                                         20 May 21:30 PM
                                     </div>
                                 </h6>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                <p class="card-text" style="color: #93949d;">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod
                                     tempor[...]</p>
 
                                 <button class="btn-card">+ Find More</button>
@@ -273,22 +125,17 @@ export default {
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card text-center">
                             <div class="card-body">
                                 <h4 class="card-title">Coaching Sessions</h4>
-                                <h6 class="d-flex align-items-center card-subtitle mb-2 text-body-secondary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="me-1 bi bi-calendar2-week" viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z" />
-                                        <path
-                                            d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4zM11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
-                                    </svg>
+                                <h6 class="d-flex justify-content-center" style="color: #93949d;">
+                                    <i class="fa-regular fa-calendar-days me-1"></i>
                                     <div>
                                         20 May 21:30 PM
                                     </div>
                                 </h6>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                <p class="card-text" style="color: #93949d;">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod
                                     tempor[...]</p>
                                 <button class="btn-card">+ Find More</button>
 
@@ -296,22 +143,17 @@ export default {
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card text-center">
                             <div class="card-body">
                                 <h4 class="card-title">Coaching Sessions</h4>
-                                <h6 class="d-flex align-items-center card-subtitle mb-2 text-body-secondary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="me-1 bi bi-calendar2-week" viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z" />
-                                        <path
-                                            d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4zM11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
-                                    </svg>
+                                <h6 class="d-flex justify-content-center" style="color: #93949d;">
+                                    <i class="fa-regular fa-calendar-days me-1"></i>
                                     <div>
                                         20 May 21:30 PM
                                     </div>
                                 </h6>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                <p class="card-text" style="color: #93949d;">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod
                                     tempor[...]</p>
                                 <button class="btn-card">+ Find More</button>
                             </div>
@@ -320,61 +162,63 @@ export default {
                 </div>
 
                 <div class="text-center">
-                    <button class="btn-yellow-card ">
+                    <button class="my-btn btn-yellow " style="margin-top: 40px;">
                         View All Events
                     </button>
                 </div>
             </div>
+        </section>
 
-        </div>
 
         <div>
-            <img src="../assets/img/svg-1.svg" style="    transform: translate(-15px, 175px);" alt="">
+            <img src="../assets/img/svg-1.svg" style="    transform: translate(-15px, -1px);" alt="">
         </div>
 
 
-        <section class="section bg-white pt-5">
-            <div class="container pt-5 pb-5">
-                <h1>Latest Courses</h1>
+        <section class="section bg-white">
+            <div class="container">
+                <h1 class="h1-p" style="padding-bottom: 50px;">Latest Courses</h1>
 
                 <div class="row">
                     <div class="col-3">
-                        <div class="card">
+                        <div class="card align-items-center ">
                             <div class="text-center">
-                                <img src="../assets/img/Decisions-icon.png" class="card-img-top" style="width: 30%;"
-                                    alt="...">
+                                <img src="../assets/img/Decisions-icon.png" class="card-img-top"
+                                    style="width: 30%; padding-top:35px;" alt="...">
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title">Coaching Sessions</h4>
-                                <p class="card-text">
-                                <div class="d-flex align-items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-person me-1" viewBox="0 0 16 16">
-                                        <path
-                                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
-                                    </svg>
-                                    <div>
-                                        Teacher: James Colins
+                                <h4 class="card-title font-size">Coaching Sessions</h4>
+                                <div class="card-text color">
+                                    <div class="d-flex align-items-center justify-content-center"
+                                        style="padding-top: 12px; padding-bottom:11px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-person me-1" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                                        </svg>
+                                        <div>
+                                            Teacher: <strong>James Colins</strong>
+                                        </div>
                                     </div>
                                 </div>
-                                </p>
-                                <p class="card-text">
-                                <div class="d-flex align-items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-cash-coin me-1" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z" />
-                                        <path
-                                            d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z" />
-                                        <path
-                                            d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z" />
-                                        <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z" />
-                                    </svg>
-                                    <div>
-                                        Price: $21.00
+                                <div class="card-text color mb-4">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-cash-coin me-1" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z" />
+                                            <path
+                                                d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z" />
+                                            <path
+                                                d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z" />
+                                            <path
+                                                d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z" />
+                                        </svg>
+                                        <div>
+                                            Price: <strong>$21.00</strong>
+                                        </div>
                                     </div>
                                 </div>
-                                </p>
                                 <button class="btn-card">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-eye" viewBox="0 0 16 16">
@@ -390,42 +234,44 @@ export default {
 
                     </div>
                     <div class="col-3">
-                        <div class="card">
+                        <div class="card align-items-center justify-content-center">
                             <div class="text-center">
-                                <img src="../assets/img/Decisions-icon.png" class="card-img-top" style="width: 30%;"
-                                    alt="...">
+                                <img src="../assets/img/Decisions-icon.png" class="card-img-top"
+                                    style="width: 30%; padding-top:35px" alt="...">
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title">Coaching Sessions</h4>
-                                <p class="card-text">
-                                <div class="d-flex align-items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-person me-1" viewBox="0 0 16 16">
-                                        <path
-                                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
-                                    </svg>
-                                    <div>
-                                        Teacher: James Colins
+                                <h4 class="card-title font-size">Coaching Sessions</h4>
+                                <div class="card-text color">
+                                    <div class="d-flex align-items-center justify-content-center"
+                                        style="padding-top: 12px; padding-bottom:11px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-person me-1" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                                        </svg>
+                                        <div>
+                                            Teacher: <strong>James Colins</strong>
+                                        </div>
                                     </div>
                                 </div>
-                                </p>
-                                <p class="card-text">
-                                <div class="d-flex align-items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-cash-coin me-1" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z" />
-                                        <path
-                                            d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z" />
-                                        <path
-                                            d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z" />
-                                        <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z" />
-                                    </svg>
-                                    <div>
-                                        Price: $21.00
+                                <div class="card-text color mb-4">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-cash-coin me-1" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z" />
+                                            <path
+                                                d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z" />
+                                            <path
+                                                d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z" />
+                                            <path
+                                                d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z" />
+                                        </svg>
+                                        <div class="">
+                                            Price: <strong>$21.00</strong>
+                                        </div>
                                     </div>
                                 </div>
-                                </p>
                                 <button class="btn-card">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-eye" viewBox="0 0 16 16">
@@ -441,42 +287,44 @@ export default {
 
                     </div>
                     <div class="col-3">
-                        <div class="card">
-                            <div class="text-center">
-                                <img src="../assets/img/Decisions-icon.png" class="card-img-top" style="width: 30%;"
-                                    alt="...">
+                        <div class="card align-items-center">
+                            <div class="text-center color">
+                                <img src="../assets/img/Decisions-icon.png" class="card-img-top"
+                                    style="width: 30%; padding-top:35px" alt="...">
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title">Coaching Sessions</h4>
-                                <p class="card-text">
-                                <div class="d-flex align-items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-person me-1" viewBox="0 0 16 16">
-                                        <path
-                                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
-                                    </svg>
-                                    <div>
-                                        Teacher: James Colins
+                                <h4 class="card-title font-size">Coaching Sessions</h4>
+                                <div class="card-text color">
+                                    <div class="d-flex align-items-center justify-content-center"
+                                        style="padding-top: 12px; padding-bottom:11px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-person me-1" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                                        </svg>
+                                        <div>
+                                            Teacher: <strong>James Colins</strong>
+                                        </div>
                                     </div>
                                 </div>
-                                </p>
-                                <p class="card-text">
-                                <div class="d-flex align-items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-cash-coin me-1" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z" />
-                                        <path
-                                            d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z" />
-                                        <path
-                                            d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z" />
-                                        <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z" />
-                                    </svg>
-                                    <div>
-                                        Price: $21.00
+                                <div class="card-text color mb-4">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-cash-coin me-1" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z" />
+                                            <path
+                                                d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z" />
+                                            <path
+                                                d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z" />
+                                            <path
+                                                d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z" />
+                                        </svg>
+                                        <div class="">
+                                            Price: <strong>$21.00</strong>
+                                        </div>
                                     </div>
                                 </div>
-                                </p>
                                 <button class="btn-card">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-eye" viewBox="0 0 16 16">
@@ -492,42 +340,44 @@ export default {
 
                     </div>
                     <div class="col-3">
-                        <div class="card">
+                        <div class="card align-items-center">
                             <div class="text-center">
-                                <img src="../assets/img/Decisions-icon.png" class="card-img-top" style="width: 30%;"
-                                    alt="...">
+                                <img src="../assets/img/Decisions-icon.png" class="card-img-top"
+                                    style="width: 30%; padding-top:35px" alt="...">
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title">Coaching Sessions</h4>
-                                <p class="card-text">
-                                <div class="d-flex align-items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-person me-1" viewBox="0 0 16 16">
-                                        <path
-                                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
-                                    </svg>
-                                    <div>
-                                        Teacher: James Colins
+                                <h4 class="card-title font-size">Coaching Sessions</h4>
+                                <div class="card-text color">
+                                    <div class="d-flex align-items-center justify-content-center"
+                                        style="padding-top: 12px; padding-bottom:11px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-person me-1" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                                        </svg>
+                                        <div>
+                                            Teacher: <strong>James Colins</strong>
+                                        </div>
                                     </div>
                                 </div>
-                                </p>
-                                <p class="card-text">
-                                <div class="d-flex align-items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-cash-coin me-1" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z" />
-                                        <path
-                                            d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z" />
-                                        <path
-                                            d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z" />
-                                        <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z" />
-                                    </svg>
-                                    <div>
-                                        Price: $21.00
+                                <div class="card-text color mb-4">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-cash-coin me-1" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z" />
+                                            <path
+                                                d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z" />
+                                            <path
+                                                d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z" />
+                                            <path
+                                                d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z" />
+                                        </svg>
+                                        <div class="">
+                                            Price: <strong>$21.00</strong>
+                                        </div>
                                     </div>
                                 </div>
-                                </p>
                                 <button class="btn-card">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-eye" viewBox="0 0 16 16">
@@ -545,20 +395,23 @@ export default {
             </div>
         </section>
 
-        <section class="bg-white">
+        <section class="bg-white" style="    padding-top: 122px;
+    padding-bottom: 10px;">
             <div class="container">
-                <div class="row">
+                <div class="row pb-5">
                     <div class="col-6" style="padding-left: 15px; padding-right: 15px;">
                         <img src="../assets/img/exam-icon.png" style="max-width: 60px;" alt="">
-                        <h1 style="padding-top: 20; padding-bottom: 10;">The most efficient
+                        <h1 class="h1-p font-48">The most efficient
                             examination method
                         </h1>
-                        <div style="padding: 40px 0 40px 0;">EduPrime has gathered teachers from around the globe to
+                        <div class=" p-color" style="padding: 40px 0 40px 0; margin-right: 60px;">EduPrime has gathered
+                            teachers from around the globe to
                             brainstorm in order to facilitate the
-                            evaluation of our students. Every teacher from our university has an influence on how students
+                            evaluation of our students. Every teacher from our university has an influence on how
+                            students
                             are evaluated at his/her subject.
                         </div>
-                        <button class="btn-sc">Discover the Method</button>
+                        <button class="my-btn btn-pink ywl">Discover the Method</button>
                     </div>
                     <div class="col-6" style="padding-left: 15px; padding-right: 15px;">
                         <div>
@@ -567,23 +420,23 @@ export default {
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row py-4">
                     <div class="col-6" style="padding-left: 15px; padding-right: 15px;">
                         <div>
-                            <img class="w-100" src="../assets/img/Exam-Illustration.png" alt="">
+                            <img class="w-100" src="../assets/img/Girl-Illustration.png" alt="">
                         </div>
                     </div>
                     <div class="col-6" style="padding-left: 15px; padding-right: 15px;">
-                        <img src="../assets/img/exam-icon.png" style="max-width: 60px;" alt="">
-                        <h1 style="padding-top: 20; padding-bottom: 10;">The most efficient
-                            examination method
+                        <img src="../assets/img/Exam-icon-1.png" style="max-width: 60px;" alt="">
+                        <h1 class="h1-p font-48">Variable fees for
+                            international students
                         </h1>
-                        <div style="padding: 40px 0 40px 0;">EduPrime has gathered teachers from around the globe to
-                            brainstorm in order to facilitate the
-                            evaluation of our students. Every teacher from our university has an influence on how students
-                            are evaluated at his/her subject.
+                        <div class=" p-color" style="padding: 40px 68px 40px 0;">EduPrime has gathered teachers from around
+                            the globe to
+                            brainstorm in order to facilitate the evaluation of our students. Every teacher from our
+                            university has an influence on how students are evaluated at his/her subject.
                         </div>
-                        <button class="btn-sc">Discover the Method</button>
+                        <button class="my-btn btn-pink ywl">List of Fees</button>
                     </div>
                 </div>
             </div>
@@ -591,19 +444,21 @@ export default {
 
         <section class="bg-white">
             <div class="container">
-                <h1>Latest Blog Posts</h1>
-                <div class="row">
+                <h1 class="font-48 h1-p ">Latest Blog Posts</h1>
+                <div class="row" style="margin-top:50px;">
                     <div class="col-4">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <img src="../assets/img/agreement-business-businessman.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Winning your business</h5>
-                                <p class="card-text">Never settle for less! You can have everything you want and need. Use
+                            <div class="card-body card-p">
+                                <h5 class="card-title font-size" style="text-align:left;">Winning your business</h5>
+                                <p class="card-text color-light-grey">Never settle for less! You can have everything you
+                                    want and need.
+                                    Use
                                     the
                                     most powerful
                                 </p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div>
+                                    <div class="date-card-color">
                                         February 17, 2019
                                     </div>
                                     <button class="btn-chevron">
@@ -618,16 +473,18 @@ export default {
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <img src="../assets/img/agreement-business-businessman.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Winning your business</h5>
-                                <p class="card-text">Never settle for less! You can have everything you want and need. Use
+                            <div class="card-body card-p">
+                                <h5 class="card-title font-size" style="text-align:left;">Winning your business</h5>
+                                <p class="card-text color-light-grey">Never settle for less! You can have everything you
+                                    want and need.
+                                    Use
                                     the
                                     most powerful
                                 </p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div>
+                                    <div class="date-card-color">
                                         February 17, 2019
                                     </div>
                                     <button class="btn-chevron">
@@ -642,16 +499,18 @@ export default {
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <img src="../assets/img/agreement-business-businessman.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Winning your business</h5>
-                                <p class="card-text">Never settle for less! You can have everything you want and need. Use
+                            <div class="card-body card-p">
+                                <h5 class="card-title font-size " style="text-align:left;">Winning your business</h5>
+                                <p class="card-text color-light-grey">Never settle for less! You can have everything you
+                                    want and need.
+                                    Use
                                     the
                                     most powerful
                                 </p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div>
+                                    <div class="date-card-color">
                                         February 17, 2019
                                     </div>
                                     <button class="btn-chevron">
@@ -669,17 +528,17 @@ export default {
             </div>
         </section>
 
-        <section>
+        <section class="bg-pink my-5">
             <div class="container">
                 <div class="row align-items-center flex-nowrap">
                     <div class="col-7">
-                        <h2>Subscribe Now to Our Newsletter !</h2>
+                        <h2 class="h2-special text-white">Subscribe Now to Our Newsletter !</h2>
                     </div>
                     <div class="col-5">
                         <div class="input-group flex-nowrap">
 
-                            <input type="text" class="form-control email-input" placeholder="Username" aria-label="Username"
-                                aria-describedby="addon-wrapping">
+                            <input type="text" class="form-control email-input" placeholder="Email Address"
+                                aria-label="Username" aria-describedby="addon-wrapping">
                             <span class="input-group-text paper-plan " id="addon-wrapping">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
                                     <path
@@ -692,11 +551,13 @@ export default {
             </div>
         </section>
 
-        <section class="bg-white">
+        <section class="my-5">
             <div class="container">
-                <div class="row">
-                    <h1>Management</h1>
-                    <div>A team of expert teachers that are leading our university! Meet our staff and become a student at
+                <div class="row justify-content-center">
+                    <h1 class="font-48 h1-p text-center">Management</h1>
+                    <div class="col-6 pb-5 text-center">A team of expert teachers that are leading our university! Meet our
+                        staff and become a student
+                        at
                         EduPrime this year!</div>
                 </div>
 
@@ -712,8 +573,8 @@ export default {
                                         <img src="../assets/img/member-mentors-1.jpg" class="card-img-top"
                                             style="border-radius: 50%;" alt="...">
                                         <div class="card-body">
-                                            <h4 class="card-title">Bruno Dias</h4>
-                                            <p class="card-text">Assistant Manager</p>
+                                            <h4 class="card-title title-slider">Bruno Dias</h4>
+                                            <div class="card-text p-slider">Assistant Manager</div>
                                         </div>
                                     </div>
                                 </div>
@@ -723,8 +584,8 @@ export default {
                                         <img src="../assets/img/member-mentors-1.jpg" class="card-img-top"
                                             style="border-radius: 50%;" alt="...">
                                         <div class="card-body">
-                                            <h4 class="card-title">Bruno Dias</h4>
-                                            <p class="card-text">Assistant Manager</p>
+                                            <h4 class="card-title title-slider">Bruno Dias</h4>
+                                            <div class="card-text p-slider">Assistant Manager</div>
                                         </div>
                                     </div>
                                 </div>
@@ -735,8 +596,8 @@ export default {
                                         <img src="../assets/img/member-mentors-1.jpg" class="card-img-top"
                                             style="border-radius: 50%;" alt="...">
                                         <div class="card-body">
-                                            <h4 class="card-title">Bruno Dias</h4>
-                                            <p class="card-text">Assistant Manager</p>
+                                            <h4 class="card-title title-slider">Bruno Dias</h4>
+                                            <div class="card-text p-slider">Assistant Manager</div>
                                         </div>
                                     </div>
                                 </div>
@@ -746,8 +607,8 @@ export default {
                                         <img src="../assets/img/member-mentors-1.jpg" class="card-img-top"
                                             style="border-radius: 50%;" alt="...">
                                         <div class="card-body">
-                                            <h4 class="card-title">Bruno Dias</h4>
-                                            <p class="card-text">Assistant Manager</p>
+                                            <h4 class="card-title title-slider">Bruno Dias</h4>
+                                            <div class="card-text p-slider">Assistant Manager</div>
                                         </div>
                                     </div>
                                 </div>
@@ -763,8 +624,8 @@ export default {
                                         <img src="../assets/img/member-mentors-1.jpg" class="card-img-top"
                                             style="border-radius: 50%;" alt="...">
                                         <div class="card-body">
-                                            <h4 class="card-title">Bruno Dias</h4>
-                                            <p class="card-text">Assistant Manager</p>
+                                            <h4 class="card-title title-slider">Bruno Dias</h4>
+                                            <div class="card-text p-slider">Assistant Manager</div>
                                         </div>
                                     </div>
                                 </div>
@@ -775,8 +636,8 @@ export default {
                                         <img src="../assets/img/member-mentors-1.jpg" class="card-img-top"
                                             style="border-radius: 50%;" alt="...">
                                         <div class="card-body">
-                                            <h4 class="card-title">Bruno Dias</h4>
-                                            <p class="card-text">Assistant Manager</p>
+                                            <h4 class="card-title title-slider">Bruno Dias</h4>
+                                            <div class="card-text p-slider">Assistant Manager</div>
                                         </div>
                                     </div>
                                 </div>
@@ -789,18 +650,170 @@ export default {
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                         data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <div class="icon-bg">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </div>
                         <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
                         data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <div class="icon-bg">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </div>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
 
                 <div class="text-center">
-                    <button class="btn-carosello">View All Team</button>
+                    <button class="my-btn btn-yellow  pnk mt-5">View All Team</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <h1 class="font-48 h1-p text-center">Partners</h1>
+                    <div class="col-6 text-center">Leverage agile frameworks to provide a robust synopsis for high level
+                        overviews. Iterative
+                        approaches
+                        to corporate strategy.
+                    </div>
+
+                    <div class="partners-logos my-5">
+                        <img src="../assets/img/partner-2.png" alt="">
+                        <img src="../assets/img/partner-3.png" alt="">
+                        <img src="../assets/img/partner-4.png" alt="">
+                        <img src="../assets/img/partner-5.png" alt="">
+                        <img src="../assets/img/partner-6.png" alt="">
+                        <img src="../assets/img/partner-8.png" alt="">
+                        <img src="../assets/img/partner-1.png" alt="">
+                        <img src="../assets/img/partner-7.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="my-5">
+            <div class="container">
+                <div class="row">
+                    <h1 class="font-48 h1-p text-center">Management</h1>
+                    <div id="carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+
+                            </div>
+                            <div class="carousel-item active">
+                                <div class="row">
+
+                                    <div class="col-6">
+                                        <div class="card p-4">
+                                            <div class="card-body">
+                                                <img class="w-100" src="../assets/img/Fac-Comp-Science.png">
+                                                <p class="card-text">“I can’t thank EduPrime enough for what it
+                                                    has
+                                                    done for
+                                                    me. I am now a successful doctor at one of the best clinics
+                                                    in
+                                                    the
+                                                    world.”</p>
+                                            </div>
+                                            <div class="testimonial d-flex">
+                                                <div class="col-3">
+                                                    <img class="w-75" src="../assets/img/testimonial-2-student-1.png">
+                                                </div>
+                                                <div class="col-9">
+                                                    <h4>Mask Stevens</h4>
+                                                    <div>Student (2012 - 2016)</div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 ">
+                                        <div class="card p-4">
+                                            <div class="card-body">
+                                                <img class="w-75" src="../assets/img/Fac-Medicine.png">
+                                                <p class="card-text">“I can’t thank EduPrime enough for what it
+                                                    has
+                                                    done for
+                                                    me. I am now a successful doctor at one of the best clinics
+                                                    in
+                                                    the
+                                                    world.”</p>
+                                            </div>
+                                            <div class="testimonial d-flex">
+                                                <div class="col-3">
+                                                    <img class="w-75" src="../assets/img/testimonial-2-student-1.png">
+                                                </div>
+                                                <div class="col-9">
+                                                    <h4>Mask Stevens</h4>
+                                                    <div>Student (2012 - 2016)</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+
+                                    <div class="col-6">
+                                        <div class="card p-4">
+                                            <div class="card-body">
+                                                <img class="w-100" src="../assets/img/Fac-Comp-Science.png">
+                                                <p class="card-text">“I can’t thank EduPrime enough for what it
+                                                    has
+                                                    done for
+                                                    me. I am now a successful doctor at one of the best clinics
+                                                    in
+                                                    the
+                                                    world.”</p>
+                                            </div>
+                                            <div class="testimonial d-flex">
+                                                <div class="col-3">
+                                                    <img class="w-75" src="../assets/img/testimonial-2-student-1.png">
+                                                </div>
+                                                <div class="col-9">
+                                                    <h4>Mask Stevens</h4>
+                                                    <div>Student (2012 - 2016)</div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 ">
+                                        <div class="card p-4">
+                                            <div class="card-body">
+                                                <img class="w-75" src="../assets/img/Fac-Medicine.png">
+                                                <p class="card-text">“I can’t thank EduPrime enough for what it
+                                                    has
+                                                    done for
+                                                    me. I am now a successful doctor at one of the best clinics
+                                                    in
+                                                    the
+                                                    world.”</p>
+                                            </div>
+                                            <div class="testimonial d-flex">
+                                                <div class="col-3">
+                                                    <img class="w-75" src="../assets/img/testimonial-2-student-1.png">
+                                                </div>
+                                                <div class="col-9">
+                                                    <h4>Mask Stevens</h4>
+                                                    <div>Student (2012 - 2016)</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -812,230 +825,220 @@ export default {
 @use "../src/assets/styles/partials/variable" as *;
 
 .container {
-    .row {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-    }
 
-    h1 {
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-
-    .description {
-        margin-bottom: 40px;
-        margin-top: 40px;
-    }
-
-    .btn-yellow {
-        background-color: #e9d758;
-        border: none;
-        color: #ffffff;
-        padding: 23px 45px;
-        border-radius: 35px;
-        font-size: 14px;
-        letter-spacing: .5px;
-    }
-
-    .tab-img {
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-
-    .nav {
-        flex-wrap: nowrap;
-        background: rgba(255, 255, 255, 1);
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
-    }
-
-    .nav-tabs .nav-link {
-        margin-bottom: calc(-1 * var(--bs-nav-tabs-border-width));
-        border: var(--bs-nav-tabs-border-width) solid transparent;
-        border-top-left-radius: none;
-        border-top-right-radius: none;
-    }
-
-    .tab-pane {
-        margin-top: 70px;
-    }
-
-    .padding-16 {
-        padding: 16px;
-    }
-
-    .btn-tabs {
-        background: #E56768;
-        color: #ffffff !important;
-        padding: 23px 45px;
-        border-radius: 35px;
-        font-size: 14px;
-        letter-spacing: .5px;
-        background: #E56768;
-        margin-top: 40px;
-        border: none;
+    // First section
+    .hover-red:hover {
+        background-color: #dd3333;
     }
 
 }
 
+.section-bg {
+    padding: 35px 15px 0 15px;
+}
 
-.secondmain {
+.title-sc {
+    color: #ffffff;
+    line-height: 29px;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.item-top {
+    display: flex;
+    justify-content: end;
+    gap: 6.9rem;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    margin-left: -80px;
+}
+
+.item-bottom {
+    margin-left: 10px;
+    display: flex;
+    justify-content: start;
+    gap: 7rem;
+    padding-top: 20px;
+    margin-bottom: 80px;
+}
+
+
+.font-size {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: rgba(34, 52, 65, 1);
+    cursor: pointer;
+}
+
+.font-size:hover {
+    color: #e56768;
+}
+
+.color {
+    color: #5c5e6c;
+}
+
+
+.btn-card {
+    font-weight: 700;
+    padding: 8px 16px;
+    color: white;
+    background: #E56768;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    font-size: 14px;
+    letter-spacing: .05px;
+    max-width: 130px;
+    margin: -5px auto;
+    border: none;
+    position: absolute;
+    z-index: 9;
+    float: none;
+    display: inline-block;
+    left: 0;
+    right: 0;
+}
+
+.btn-card:hover {
+    background: #E9D758;
+}
+
+.p-color {
+    color: #3d404f;
+}
+
+.ywl:hover {
+    background: #E9D758;
+
+}
+
+.btn-chevron {
+    background-color: #E9D758;
+    border: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 5px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 50%;
+}
+
+.btn-chevron:hover {
+    background: #E56768;
+}
+
+.pnk:hover {
+    background: #E56768;
+}
+
+.email-input {
+    border-radius: 35px;
+    height: 70px;
+    font-size: 15px;
+    border: 0 none;
+    float: left;
+    padding: 25px;
+    width: 100%;
+    font-weight: 400;
+    outline: 0;
+}
+
+.carousel-inner {
+    padding-left: 85px;
+}
+
+.carousel-control-next {
+    right: 0;
+}
+
+.carousel-dark .carousel-control-prev-icon,
+.carousel-dark .carousel-control-next-icon {
+    filter: grayscale(0);
+}
+
+.icon-bg {
     background-color: #E56768;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+}
 
-    .section-bg {
-        padding: 35px 15px 0 15px;
-    }
+.icon-bg:hover {
+    background-color: #E9D758;
+}
 
-    .item-top {
-        display: flex;
-        justify-content: end;
-        gap: 6.9rem;
-        padding-bottom: 20px;
-    }
+.carousel-control-prev,
+.carousel-control-next {
+    justify-content: space-between;
+    width: 3%;
+}
 
-    .item-bottom {
-        margin-left: 10px;
-        display: flex;
-        justify-content: start;
-        gap: 7rem;
-        padding-top: 20px;
-        margin-bottom: 80px;
-    }
+.paper-plane {
+    position: absolute;
+    top: -1px;
+    padding: 21px 28px;
+    background: #E9D758;
+    border-radius: 50%;
+    right: -1px;
+    color: #fff;
+    font-size: 20px;
+    box-shadow: none;
+    display: block;
+    border: 0;
+    outline: 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
+}
 
-    .btn-card {
-        background: #E56768;
-        font-weight: 400;
-        padding: 8px 16px;
-        color: white;
-        background: #E56768;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
-        -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
-        border-radius: 20px;
-        font-size: 14px;
-        letter-spacing: .05px;
-        position: absolute;
-        z-index: 9;
-        float: none;
-        display: inline-block;
-        left: 0;
-        right: 0;
-        max-width: 130px;
-        margin: -5px auto;
-        border: none;
-    }
+.input-group[data-v-36ea3cff]:not(.has-validation)> :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating),
+.input-group:not(.has-validation)>.dropdown-toggle[data-v-36ea3cff]:nth-last-child(n+3),
+.input-group:not(.has-validation)>.form-floating:not(:last-child)>.form-control[data-v-36ea3cff],
+.input-group:not(.has-validation)>.form-floating:not(:last-child)>.form-select[data-v-36ea3cff] {
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
 
-    .btn-yellow-card {
-        background-color: #e9d758;
-        color: #ffffff;
-        padding: 23px 45px;
-        border-radius: 35px;
-        font-size: 14px;
-        letter-spacing: .5px;
-        border: none;
-        margin-top: 40px;
+.input-group-text {
+    position: absolute;
+    top: -1px;
+    padding: 21px 28px;
+    background: #E9D758;
+    border-radius: 50%;
+    right: -1px;
+    color: #fff;
+    font-size: 20px;
+    box-shadow: none;
+    display: block;
+    border: 0;
+    outline: 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
+}
 
-    }
+.input-group> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    margin-left: calc(var(--bs-border-width) * -1);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
 
-    .btn-sc {
-        background-color: #e56768;
-        color: #ffffff;
-        padding: 23px 45px;
-        border-radius: 35px;
-        font-size: 14px;
-        letter-spacing: .5px;
-        border: none;
-    }
 
-    .btn-chevron {
-        background-color: #E9D758;
-        border: none;
-        color: rgb(255, 255, 255);
-        display: block;
-        padding: 5px 10px;
-        text-align: center;
-        text-transform: uppercase;
-        transition: all 250ms ease;
-        -webkit-transition: all 250ms ease;
-        -ms-transition: all 250ms ease;
-        -moz-transition: all 250ms ease;
-        border-radius: 50%;
-    }
 
-    .email-input {
-        border-radius: 35px;
-        height: 70px;
-        font-size: 15px;
-        border: 0 none;
-        float: left;
-        padding: 25px;
-        width: 100%;
-        font-weight: 400;
-        outline: 0;
-    }
+.partners-logos img {
+    max-height: 43px;
+    margin: 0 20px;
+    display: inline-block;
+    opacity: .3;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    cursor: pointer;
+    width: auto;
 
-    .paper-plane {
-        position: absolute;
-        top: -1px;
-        padding: 21px 28px;
-        background: #E9D758;
-        border-radius: 50%;
-        right: -1px;
-        color: #fff;
-        font-size: 20px;
-        box-shadow: none;
-        display: block;
-        border: 0;
-        outline: 0;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
-        transition: all 300ms ease;
-        -webkit-transition: all 300ms ease;
-    }
+}
 
-    .input-group> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
-        margin-left: calc(var(--bs-border-width) * -1);
-        border-top-left-radius: none;
-        border-bottom-left-radius: none;
-    }
+.carousel-indicators {
+    bottom: -24px;}
 
-    .input-group-text {
-        position: absolute;
-        top: -1px;
-        padding: 21px 28px;
-        background: #E9D758;
-        border-radius: 50%;
-        right: -1px;
-        color: #fff;
-        font-size: 20px;
-        box-shadow: none;
-        display: block;
-        border: 0;
-        outline: 0;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
-        transition: all 300ms ease;
-        -webkit-transition: all 300ms ease;
-    }
-
-    .input-group> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
-        margin-left: calc(var(--bs-border-width) * -1);
-        border-top-left-radius: 50%;
-        border-bottom-left-radius: 50%;
-    }
-
-    .input-group:not(.has-validation)> :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating),
-    .input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3),
-    .input-group:not(.has-validation)>.form-floating:not(:last-child)>.form-control,
-    .input-group:not(.has-validation)>.form-floating:not(:last-child)>.form-select {
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-    }
-
-    .btn-carosello {
-        background-color: #e9d758;
-        color: #ffffff;
-        padding: 23px 45px;
-        border-radius: 35px;
-        font-size: 14px;
-        letter-spacing: .5px;
-        border: none;
-    }
+.partners-logos img:hover {
+    opacity: 1;
 }
 </style>
