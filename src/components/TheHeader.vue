@@ -37,7 +37,7 @@ export default {
                 <div class="col-8 nav-bar">
                     <nav>
                         <ul>
-                            <li class="dropdown d-flex" v-for="(li, i) in store.navMenu" :key="i">
+                            <li class="dropdown d-flex active" v-for="(li, i) in store.navMenu" :key="i">
                                 <div class="drop-menu" href="#">{{ li.name }}</div>
                                 <i class="fa-solid fa-caret-down" v-if="li.menu"></i>
                                 <ul class="dropdown-menu" v-if="li.menu">
@@ -117,9 +117,6 @@ header {
             padding-left: 0;
             list-style: none;
 
-            li:hover{
-                color:#e9d758;
-            }
 
             .dropdown {
                 padding: 35px 15px;
@@ -152,8 +149,12 @@ header {
                 }
 
                 .drop-menu:hover {
-                    color: #e56767d8;
-                    ;
+                    color: #e9d758;
+                    
+                }
+
+                .active{
+                    color: #e9d758;
                 }
 
             }
