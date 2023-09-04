@@ -447,8 +447,8 @@ export default {
                 <h1 class="font-48 h1-p ">Latest Blog Posts</h1>
                 <div class="row" style="margin-top:50px;">
                     <div class="col-4">
-                        <div class="card">
-                            <img src="../assets/img/agreement-business-businessman.jpg" class="card-img-top" alt="...">
+                        <div class="card overflow-hidden">
+                            <img src="../assets/img/agreement-business-businessman.jpg" class="card-img-top hover-zoom" alt="...">
                             <div class="card-body card-p">
                                 <h5 class="card-title font-size" style="text-align:left;">Winning your business</h5>
                                 <p class="card-text color-light-grey">Never settle for less! You can have everything you
@@ -473,8 +473,9 @@ export default {
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="card">
-                            <img src="../assets/img/agreement-business-businessman.jpg" class="card-img-top" alt="...">
+                        <div class="card overflow-hidden">
+                            <img src="../assets/img/apps-cellphone-communication.jpg"
+                                class="card-img-top hover-zoom" alt="...">
                             <div class="card-body card-p">
                                 <h5 class="card-title font-size" style="text-align:left;">Winning your business</h5>
                                 <p class="card-text color-light-grey">Never settle for less! You can have everything you
@@ -499,8 +500,8 @@ export default {
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="card">
-                            <img src="../assets/img/agreement-business-businessman.jpg" class="card-img-top" alt="...">
+                        <div class="card overflow-hidden">
+                            <img src="../assets/img/bags-best-friends-daylight.jpg" class="card-img-top hover-zoom" alt="...">
                             <div class="card-body card-p">
                                 <h5 class="card-title font-size " style="text-align:left;">Winning your business</h5>
                                 <p class="card-text color-light-grey">Never settle for less! You can have everything you
@@ -833,6 +834,15 @@ export default {
 
 }
 
+.hover-zoom {
+    transition: transform .2s; 
+}
+
+.hover-zoom:hover {
+    transition: transform .2s; 
+    transform: scale(1.1);
+}
+
 .section-bg {
     padding: 35px 15px 0 15px;
 }
@@ -1028,17 +1038,15 @@ export default {
     margin: 0 20px;
     display: inline-block;
     opacity: .3;
-    transition: all 300ms ease;
-    -webkit-transition: all 300ms ease;
     cursor: pointer;
     width: auto;
 
 }
 
 .carousel-indicators {
-    bottom: -24px;}
+    bottom: -24px;
+}
 
 .partners-logos img:hover {
     opacity: 1;
-}
-</style>
+}</style>
