@@ -17,14 +17,14 @@ export default {
 
             store.slideIndex--;
             if (store.slideIndex < 0) {
-                store.slideIndex = Object.keys(store.slider).length - 1;
+                store.slideIndex = store.slider.length - 1;
             }
 
         },
         nextSlide() {
 
             store.slideIndex++;
-            if (store.slideIndex > Object.keys(store.slider).length - 1) {
+            if (store.slideIndex > store.slider.length - 1) {
                 store.slideIndex = 0;
             }
         },
@@ -42,9 +42,8 @@ export default {
 
         <div class="slider-container">
             <div class="" v-for="(slide, i, index) in store.slider" :key="i" v-show="index === store.slideIndex">
-                <h1>{{ slide.h1 }}</h1>
+                <h1 class="text-white">{{ slide.h1 }}</h1>
                 <h5>{{ slide.description }}</h5>
-                <div>{{ index }}</div>
 
                 <div class="slider-btn d-flex justify-content-center gap-4">
                     <button class="my-btn btn-yellow">
