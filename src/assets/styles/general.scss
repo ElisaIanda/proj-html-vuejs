@@ -108,10 +108,38 @@ h2 {
     margin-bottom: 10px;
 }
 
-.p-slider{
+.p-slider {
     font-size: 15px;
     line-height: 16px;
     text-align: center;
     color: #999999;
+}
+
+.btn-fixed {
+    background-color: yellow;
+    padding: 10px 16px;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.fix {
+    width: 185px;
+    position: fixed;
+    left: 40px;
+    font-weight: 300;
+    bottom: 40px;
+    background: #454545;
+    color: white;
+    padding: 10px 25px;
+    letter-spacing: .5px;
+    cursor: pointer;
+    box-shadow: 0 17px 10px -12px rgba(0, 0, 0, .4);
+    border-radius: 5px;
+    font-size: 11px;
 }
 

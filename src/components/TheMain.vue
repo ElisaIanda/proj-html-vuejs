@@ -448,7 +448,8 @@ export default {
                 <div class="row" style="margin-top:50px;">
                     <div class="col-4">
                         <div class="card overflow-hidden">
-                            <img src="../assets/img/agreement-business-businessman.jpg" class="card-img-top hover-zoom" alt="...">
+                            <img src="../assets/img/agreement-business-businessman.jpg" class="card-img-top hover-zoom"
+                                alt="...">
                             <div class="card-body card-p">
                                 <h5 class="card-title font-size" style="text-align:left;">Winning your business</h5>
                                 <p class="card-text color-light-grey">Never settle for less! You can have everything you
@@ -474,8 +475,8 @@ export default {
                     </div>
                     <div class="col-4">
                         <div class="card overflow-hidden">
-                            <img src="../assets/img/apps-cellphone-communication.jpg"
-                                class="card-img-top hover-zoom" alt="...">
+                            <img src="../assets/img/apps-cellphone-communication.jpg" class="card-img-top hover-zoom"
+                                alt="...">
                             <div class="card-body card-p">
                                 <h5 class="card-title font-size" style="text-align:left;">Winning your business</h5>
                                 <p class="card-text color-light-grey">Never settle for less! You can have everything you
@@ -501,7 +502,8 @@ export default {
                     </div>
                     <div class="col-4">
                         <div class="card overflow-hidden">
-                            <img src="../assets/img/bags-best-friends-daylight.jpg" class="card-img-top hover-zoom" alt="...">
+                            <img src="../assets/img/bags-best-friends-daylight.jpg" class="card-img-top hover-zoom"
+                                alt="...">
                             <div class="card-body card-p">
                                 <h5 class="card-title font-size " style="text-align:left;">Winning your business</h5>
                                 <p class="card-text color-light-grey">Never settle for less! You can have everything you
@@ -819,6 +821,22 @@ export default {
             </div>
         </section>
 
+        <div class="d-fle justify-content-end">
+            <div class="btn-fixed">
+                <i class="fa-solid fa-chevron-up"></i>
+            </div>
+        </div>
+
+        <button class="d-flex align-items-center">
+            <div class=" d-flex align-items-center fix">
+                <div style="width: 15px; " class="me-1">
+                    <img src="../assets/img/svg-3.svg">
+                </div>
+                <div>
+                    Purchase Theme
+                </div>
+            </div>
+        </button>
     </main>
 </template>
 
@@ -835,11 +853,11 @@ export default {
 }
 
 .hover-zoom {
-    transition: transform .2s; 
+    transition: transform .2s;
 }
 
 .hover-zoom:hover {
-    transition: transform .2s; 
+    transition: transform .2s;
     transform: scale(1.1);
 }
 
@@ -1049,4 +1067,5 @@ export default {
 
 .partners-logos img:hover {
     opacity: 1;
-}</style>
+}
+</style>
