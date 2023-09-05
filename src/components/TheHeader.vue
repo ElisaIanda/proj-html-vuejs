@@ -23,9 +23,6 @@ export default {
 
 <template>
     <header class="">
-        <!-- Stampo img -->
-        <img class="slider-img" :src="getImage(`theme_slider${store.slideIndex}_bg-1.jpg`)">
-
         <div class="row justify-content-between bg-color">
             <div class="header-container d-flex flex-wrap align-items-center justify-content-center"
                 style="padding: 30px 50px">

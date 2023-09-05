@@ -31,6 +31,12 @@ export default {
 
     },
 
+    computed:{
+        slide(){
+            return store.slider[store.slideIndex]
+        }
+    }
+
 }
 </script>
 
@@ -41,7 +47,7 @@ export default {
 "></i>
 
         <div class="slider-container">
-            <div class="" v-for="(slide, i, index) in store.slider" :key="i" v-show="index === store.slideIndex">
+            <div class="" >
                 <h1 class="text-white">{{ slide.h1 }}</h1>
                 <h5>{{ slide.description }}</h5>
 

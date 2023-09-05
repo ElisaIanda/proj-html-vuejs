@@ -50,23 +50,23 @@ export const store = reactive({
         }
     },
 
-    slider: {
-        showCase: {
+    slider: [
+        {
             h1: 'Showcase your courses',
             img: 'theme_slider2_bg-1.jpg',
             description: 'EduPrime is the most versatile WordPress theme for educational purposes, showcasing universitiesm courses, secondary schools etc.'
         },
-        key: {
+        {
             h1: 'Key to your success',
             img: 'theme_slider1_bg-1.jpg',
             description: 'EduPrime is the most versatile WordPress theme for educational purposes, showcasing universitiesm courses, secondary schools etc.'
         },
-        lead: {
+        {
             h1: 'Lead. Inspire. Win!',
             img: 'theme_slider2_bg-1.jpg',
             description: 'EduPrime is the most versatile WordPress theme for educational purposes, showcasing universitiesm courses, secondary schools etc.'
         },
-    },
+    ],
 
     // footer
 
